@@ -5,10 +5,10 @@
 
 <body>
 	<div id="wrap">
-	  	
+
 	  	<!-- Navigation -->
 	  	{% include menu.html %}
-    
+
     <!-- Icon menu -->
 	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
 	  	<div id="menu"></div>
@@ -23,13 +23,13 @@
 
     <!-- Main content -->
 	  <div id="container">
-		  
+
 		<main>
 
 			{{ content }}
 
 	  </main>
-		
+
 		  <!-- Pagination links -->
       {% if paginator.total_pages > 1 %}
         <div class="pagination">
@@ -40,7 +40,7 @@
           {% else %}
             <span class="page-item">&laquo;</span>
           {% endif %}
-        
+
           {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
               <span class="page-item">{{ page }}</span>
@@ -50,7 +50,7 @@
               <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
             {% endif %}
           {% endfor %}
-        
+
           {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
           {% else %}
@@ -60,7 +60,7 @@
         {% endif %}
 
 	  </div>
-	    
+
 	    <!-- Footer -->
 	    {% include footer.html %}
 
@@ -68,5 +68,11 @@
       {% include script.html %}
 
 	</div>
+
+	<a title="Real Time Web Analytics" href="http://clicky.com/101091686"><img alt="" src="" border="0" /></a>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(101091686); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101091686ns.gif" /></p></noscript>
+
 </body>
 </html>
