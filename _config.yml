@@ -1,11 +1,11 @@
 # Site settings
 title: Aniruddh Gopale
-description: "A minimal blog template, build with Jekyll."
+description: ""
 
 
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /blog/
 markdown: kramdown
 source: .
 destination: ./_site
