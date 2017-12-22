@@ -23,8 +23,9 @@ defaults:
       layout: "post"
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Custom variables
 version: "1.1.0"
