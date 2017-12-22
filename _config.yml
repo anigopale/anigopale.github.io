@@ -5,7 +5,7 @@ description: ""
 
 
 # Build settings
-baseurl: "/"
+baseurl: ""
 markdown: kramdown
 source: .
 destination: ./_site
