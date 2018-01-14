@@ -27,6 +27,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+extensions: [fenced_code_blocks]
 # Custom variables
 version: "1.1.0"
 
